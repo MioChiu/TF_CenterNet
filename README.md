@@ -1,6 +1,6 @@
 # TF_CenterNet
 ## Introduction
-This my implementation of CenterNet([Objects as Points](https://arxiv.org/abs/1904.07850)) in pure TensorFlow.The main special features of this repo inlcude:
+This my implementation of CenterNet([Objects as Points](https://arxiv.org/abs/1904.07850)) in pure TensorFlow.You can refer to the official [code](https://github.com/xingyizhou/CenterNet).The main special features of this repo inlcude:
 * tf.data pipeline
 * light backbone：resnet18, mobilenetV2
 * all codes were writen by pure TensorFlow ops (no keras or slim) 
