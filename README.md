@@ -14,7 +14,7 @@ This my implementation of CenterNet([Objects as Points](https://arxiv.org/abs/19
 
 ## Train on voc dataset
 
-1. Make dataset file  
+### 1. Make dataset file  
 Download Pascal VOC Dataset and reorganize the directory as follows:
 ```
 VOC
@@ -32,15 +32,15 @@ $ cd ./data/dataset
 $ python voc_annotation.py --data_path D:/dataset/VOC
 ```
 
-2.Download pre-train weights  
-You can get pre-train weights of [resnet](https://github.com/MioChiu/ResNet_TensorFlow) or [mobilenet](https://github.com/MioChiu/MobileNet_V2_TensorFlow) from my other repo.  
+### 2. Download pre-train weights  
+You can get pre-train weights of [resnet](https://github.com/MioChiu/ResNet_TensorFlow) or [mobilenet](https://github.com/MioChiu/MobileNet_V2_TensorFlow) from my other repo.  Put npy file in `pretrained_weights` folder. 
 
-3. Modify `cfg.py` and run `train.py`  
+### 3. Modify `cfg.py` and run `train.py`  
 ```
 $ python train.py
 ```
 
-4. Inference  
+### 4. Inference  
 Update `ckpt_path` in `inference.py`,and run demo:  
 ```
 $ python inference.py
@@ -50,7 +50,11 @@ The result for the example images should look like:
 ![demo_img2](https://github.com/MioChiu/TF_CenterNet/blob/master/img/2.png)  
 ![demo_img3](https://github.com/MioChiu/TF_CenterNet/blob/master/img/3.png)  
 
-5.Visualization
+### 5.Visualization
 ```
 $ tensorboard --logdir=./log
 ```
+
+## Reference
+[1] official [code](https://github.com/xingyizhou/CenterNet) and [paper](https://arxiv.org/abs/1904.07850)  
+[2] YunYang1994's [YOLOv3 repo](https://github.com/YunYang1994/tensorflow-yolov3)
