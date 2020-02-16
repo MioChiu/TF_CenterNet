@@ -13,6 +13,7 @@ This my implementation of CenterNet([Objects as Points](https://arxiv.org/abs/19
 * tqdm
 
 ## Train on voc dataset
+
 1. Make dataset file  
 Download Pascal VOC Dataset and reorganize the directory as follows:
 ```
@@ -41,7 +42,10 @@ Update `ckpt_path` in `inference.py`,and run demo:
 ```
 $ python inference.py
 ```
-The result for the example images should look like:
+The result for the example images should look like:  
+![demo_img1](https://github.com/MioChiu/TF_CenterNet/blob/master/img/1.png)  
+![demo_img2](https://github.com/MioChiu/TF_CenterNet/blob/master/img/2.png)  
+![demo_img3](https://github.com/MioChiu/TF_CenterNet/blob/master/img/3.png)  
 
 4.Visualization
 ```
