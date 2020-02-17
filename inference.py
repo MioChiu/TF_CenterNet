@@ -16,7 +16,7 @@ sess = tf.Session()
 inputs = tf.placeholder(shape=[None,None,None,3],dtype=tf.float32)
 model = CenterNet(inputs, False)
 saver = tf.train.Saver()
-saver.restore(sess,ckpt_path)
+saver.restore(sess,tf.train.latest_checkpoint(ckpt_path))
 
 hm = model.pred_hm
 wh = model.pred_wh
