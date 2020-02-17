@@ -20,6 +20,7 @@ lr_piecewise = [0.0001, 0.00001, 0.000001]  # piecewise
 warm_up_epochs = 2  # CosineAnnealing
 init_lr= 1e-4       # CosineAnnealing
 end_lr = 1e-6       # CosineAnnealing
+pre_train = True
 
 # test
 test_data_file = './data/dataset/voc_test.txt'

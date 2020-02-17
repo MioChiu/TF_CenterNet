@@ -109,7 +109,8 @@ def train():
         
         # train 
         sess.run(tf.global_variables_initializer())
-        load_weights(sess,'./pretrained_weights/resnet34.npy')
+        if cfg.pre_train:
+            load_weights(sess,'./pretrained_weights/resnet34.npy')
         for epoch in range(1, 1+cfg.epochs):
             pbar = tqdm(range(num_train_batch))
             train_epoch_loss, test_epoch_loss = [], []
