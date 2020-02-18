@@ -53,8 +53,8 @@ The result for the example images should look like:
 ### 5.Visualization
 ```
 $ tensorboard --logdir=./log
-![tensorboard_img](https://github.com/MioChiu/TF_CenterNet/blob/master/img/4.png)  
 ```
+![tensorboard_img](https://github.com/MioChiu/TF_CenterNet/blob/master/img/4.png)  
 
 ## Reference
 [1] official [code](https://github.com/xingyizhou/CenterNet) and [paper](https://arxiv.org/abs/1904.07850)  
