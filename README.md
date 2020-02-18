@@ -53,6 +53,7 @@ The result for the example images should look like:
 ### 5.Visualization
 ```
 $ tensorboard --logdir=./log
+![tensorboard_img](https://github.com/MioChiu/TF_CenterNet/blob/master/img/4.png)  
 ```
 
 ## Reference
